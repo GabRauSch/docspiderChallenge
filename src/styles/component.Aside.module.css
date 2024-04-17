@@ -1,0 +1,19 @@
+.aside{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 3px #999;
+}
+.asideItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 70px;
+    box-shadow: 1px 1px 3px #999;
+}
+.imageArea{
+    width: 20px;
+    margin-right: 10px;
+}
+.imageArea img{
+    width: 100%;
+}
