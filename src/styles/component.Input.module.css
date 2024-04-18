@@ -1,0 +1,20 @@
+.input, .textArea{
+    display: flex;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 3px;
+}
+.input input,
+.textArea textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    color: #333;
+}
+.textArea textarea{
+    min-height: 100px;
+}
+.input input{
+    font-size: 23px;
+
+}

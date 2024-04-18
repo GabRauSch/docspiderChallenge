@@ -3,12 +3,19 @@
     flex-direction: column;
     box-shadow: 1px 1px 3px #999;
 }
+.asideItem div{
+    text-wrap: nowrap;
+}
 .asideItem{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    gap: 70px;
+    gap: 60px;
     box-shadow: 1px 1px 3px #999;
+    cursor: pointer;
+}
+.asideItem:hover{
+    background-color: #eee;
 }
 .imageArea{
     width: 20px;

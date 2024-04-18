@@ -88,3 +88,81 @@
 .documentItem:hover .infoBox {
     display: block; 
 }
+.createButton{
+    width: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.createButton img{
+    width: 100%;
+}
+
+.uploadImage{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid #000;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all ease .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.uploadImage:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.uploadImage img{
+    width: 70%;
+}
+.upload span{
+
+}
+.modalSelection{
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.fileSelect{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.buttonConfirm{
+    background-color: #00408b;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    width: fit-content;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.selectedFile{
+    width: 50px;
+}
+.fileArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    flex: 1;
+}
+.selectType{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.selectType div{
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+}
+.selectType div:hover{
+    background-color: #ccc;
+}

@@ -1,0 +1,41 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalContent{
+    min-width: 600px;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #222;
+    display: flex;
+    flex-direction: column;
+}
+.modalHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.modalTitle{
+    margin: 0;
+    color: #333
+}
+.close{
+    cursor: pointer;
+    width: 10px;
+}
+.close img{
+    width: 100%;
+}
+.modalBody{
+    display: flex;
+    padding: 20px;
+    flex: 1;
+}

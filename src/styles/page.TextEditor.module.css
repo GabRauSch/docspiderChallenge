@@ -1,0 +1,20 @@
+.save{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: #00408b;
+    color: #fff;
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.editor{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    max-height: 600px;
+    padding: 20px;
+
+}
