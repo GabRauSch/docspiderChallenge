@@ -1,15 +1,21 @@
 import { actionType } from "../types/action"
 
 export type documentType = {
+    id: number,
     title: string,
     description: string,
-    path: string
+    path: string,
+    createdAt: Date,
+    updatedAt: Date
 }
 
 export const documentInitialState: documentType = {
+    id: 0,
     title: '',
     description: '',
-    path: ''
+    path: '',
+    createdAt: new Date(),
+    updatedAt: new Date()
 }
 
 export const changeTitle = (payload: any)=>({

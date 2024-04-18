@@ -1,9 +1,11 @@
 import {createContext, useReducer, ReactNode} from 'react';
 import { actionType } from '../types/action';
 import { documentInitialState, documentReducer, documentType } from '../reducers/documentReducer';
+import { documentsListInitialState, documentsListReducer } from '../reducers/documentsListReducer';
 
 type initialStateType = {
-    document: documentType
+    document: documentType,
+    documentsList: documentType[]
 }
 
 type contextType = {
@@ -12,7 +14,8 @@ type contextType = {
 }
 
 const initialState = {
-    document: documentInitialState
+    document: documentInitialState,
+    documentsList: documentsListInitialState
 }
 
 export const Context = createContext<contextType>({
@@ -21,7 +24,8 @@ export const Context = createContext<contextType>({
 })
 
 const mainReducer = (state: initialStateType, action: actionType)=>({
-    document: documentReducer(state.document, action)
+    document: documentReducer(state.document, action),
+    documentsList: documentsListReducer(state.documentsList, action)
 })
 
 export const ContextProvider: React.FC<{children: ReactNode }> = ({children})=>{

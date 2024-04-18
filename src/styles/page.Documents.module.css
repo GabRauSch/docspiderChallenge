@@ -8,6 +8,8 @@
 
 .list{
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .documentItem{
     display: flex;
@@ -15,7 +17,7 @@
     box-shadow: 1px 1px 4px #999;
     padding: 5px;
     border-radius: 5px;
-    max-width: 150px;
+    width: 150px;
     position: relative;
 }
 .display{
@@ -70,7 +72,7 @@
 .infoBox {
     position: absolute;
     top: 0; 
-    left: 100%;
+    left: 0;
     display: none; 
     font-size: 10px;
     padding: 10px;
@@ -85,8 +87,41 @@
     text-wrap: nowrap;
 }
 
+.actions{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+.actionsImage{
+    width: 9px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+.actionsImage img{
+    width: 100%;
+}
+#edit{
+    border-top-left-radius: 5px;
+}
+#delete{
+    border-bottom-right-radius: 5px;
+}
+#edit:hover{
+    background-color: #ccc;
+}
+#delete:hover{
+    background-color: #f99;
+}
+
 .documentItem:hover .infoBox {
     display: block; 
+}
+.documentItem:hover .actions{
+    display: flex;
 }
 .createButton{
     width: 15px;
