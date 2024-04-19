@@ -30,6 +30,35 @@ export const callPostFormData = async (url: string, body: { title: string; descr
     }
 };
 
+export const callPutFormData = async (url: string, body: any) => {
+    try {
+        const finalUrl = `${backendAdress}${url}`;
+        
+        const fileUri = body.file;
+        const fileName = body.file.name.split('/').pop()!;
+        const type = body.file.type
+        const extension = fileName.split('.')[1];
+        
+        const formData = new FormData();
+        formData.append('id', body.id);
+        formData.append('title', body.title);
+        formData.append('description', body.description);
+        formData.append('originalPath', body.originalPath); 
+        formData.append('document', body.file); 
+
+        const response = await axios.put(finalUrl, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+            }
+        });
+
+        return response;
+    } catch (error) {
+        console.error(error);
+        return null;
+    }
+};
+
 export const callPostEndpoint = async (url: string, body: object, queries?: string)=>{
     try {
         const finalUrl = `${backendAdress}${url}`

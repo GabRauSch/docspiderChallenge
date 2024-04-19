@@ -5,6 +5,7 @@ export type documentType = {
     title: string,
     description: string,
     path: string,
+    mimetype: string,
     createdAt: Date,
     updatedAt: Date
 }
@@ -14,6 +15,7 @@ export const documentInitialState: documentType = {
     title: '',
     description: '',
     path: '',
+    mimetype: '',
     createdAt: new Date(),
     updatedAt: new Date()
 }

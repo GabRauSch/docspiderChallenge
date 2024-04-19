@@ -130,7 +130,7 @@ export const Documents = () => {
                                 </div>
                             </div>
                             <div className={styles.display}>
-                                <div className={styles.type}>.{el.path.split('.')[el.path.split('.').length -1]}</div>
+                                <div className={styles.type}>.{el.path.split('.')[el.path.split('.').length -1].slice(0, 5)}</div>
                                 <div className={styles.imageDisplay}>
                                     <img src={el.mimetype == 'image' 
                                         ? `${backendAdress}/documents/${el.mimetype}/${el.path}` 

@@ -1,0 +1,25 @@
+.page{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%; 
+}
+.changeNameArea{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.buttonConfirm{
+    background-color: #00408b;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    width: fit-content;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.previewContent{
+    width: 1000px;
+}
