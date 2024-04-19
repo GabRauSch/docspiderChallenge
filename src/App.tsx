@@ -5,15 +5,19 @@ import { BrowserRouter } from 'react-router-dom';
 import { MainRoutes } from './routes/MainRoutes';
 import { Aside } from './components/Aside';
 import { Header } from './components/Header';
+import useAside from './hooks/useAside';
 
 
 function App() {
+  const {isOpen, toggleAside} = useAside();
   return (
     <div style={{height:'100vh', display: 'flex', flexDirection: 'column'}}>
       <BrowserRouter>
-        <Header />
+        <Header menuFunction={toggleAside}/>
         <div style={{display: 'flex', flex: 1 }}>
-          <Aside />
+          {isOpen && 
+            <Aside />
+          }
           <MainRoutes />
         </div>
       </BrowserRouter>

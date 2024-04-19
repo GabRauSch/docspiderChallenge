@@ -24,3 +24,11 @@
 .imageArea img{
     width: 100%;
 }
+
+@media(max-width: 768px){
+    .aside{
+        background-color: #fff;
+        position: fixed;
+        z-index: 999;
+    }
+}

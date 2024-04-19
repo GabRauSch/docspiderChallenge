@@ -1,10 +1,17 @@
+import useAside from '../hooks/useAside';
 import styles from '../styles/component.Header.module.css';
 
-export const Header = ()=>{
+type Props = {
+    menuFunction: ()=>void
+}
+
+export const Header = ({menuFunction} : Props)=>{
+    const {isOpen, toggleAside} = useAside();
+
     return (
         <header className={styles.header}>
             <div className={styles.menu}>
-                <div className={styles.menuIcon}>
+                <div className={styles.menuIcon} onClick={menuFunction}>
                     <img src="/menu.svg" alt="menu" />
                 </div>
             </div>

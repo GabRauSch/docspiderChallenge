@@ -1,7 +1,7 @@
 .modal{
     width: 100vw;
-    height: 100vh;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,0.5);
@@ -38,4 +38,12 @@
     display: flex;
     padding: 20px;
     flex: 1;
+}
+
+
+@media(max-width: 768px){
+    .modalContent{
+        min-width: 300px;
+        min-height: 200px;
+    }
 }

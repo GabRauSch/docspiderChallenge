@@ -1,16 +1,24 @@
+.content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    gap: 40px
+}
 .content h1 {
-    font-size: 2.5rem;
+    margin: 0;
+    font-size: 25px;
+    color: #333;
     margin-bottom: 20px;
 }
-
 .content p {
     font-size: 1.2rem;
     margin-bottom: 15px;
 }
-
 .btn {
     display: inline-block;
-    background-color: #4d4dff;
+    background-color: #001555;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -19,5 +27,24 @@
 }
 
 .btn:hover {
-    background-color: #001555;
+    background-color: #002565;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+.optionItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #333
+}
+.optionItem div{
+    width: 30px;
+}
+.optionItem div img{
+    width: 100%;
 }

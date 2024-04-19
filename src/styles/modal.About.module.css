@@ -18,3 +18,10 @@
 .content h1{
     margin: 0;
 }
+
+
+@media(max-width: 768px){
+    .content{
+        width: 300px;
+    }
+}
